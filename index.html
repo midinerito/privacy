@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fdf6e3" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1f1d18" media="(prefers-color-scheme: dark)">
-  <meta name="description" content="Política de privacidad de Mi Dinerito — app educativa de finanzas para niños de 5 a 12 años. Cero analytics, cero publicidad, cero tracking. Datos del peque mínimos y protegidos.">
+  <meta name="theme-color" content="#fdf6e3">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Política de privacidad de Mi Dinerito — app educativa de finanzas para niños de 5 a 12 años. Cero analítica, cero publicidad, cero tracking. Datos del peque mínimos y protegidos.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://midinerito.github.io/privacy/">
   <link rel="alternate" hreflang="es" href="https://midinerito.github.io/privacy/">
@@ -41,7 +41,7 @@
       <div class="hero-tldr">
         <h2>Lo importante en 30 segundos</h2>
         <ul>
-          <li>Cero analítica, cero publicidad, cero tracking. Punto.</li>
+          <li>Cero analítica, cero publicidad, cero tracking.</li>
           <li>Tu peque NO necesita cuenta Google ni email. Entra con un código que tú generas.</li>
           <li>Las fotos que pongas a los deseos se quedan en TU dispositivo. Nunca se suben.</li>
           <li>No vendemos, ni cedemos, ni entrenamos modelos con tus datos.</li>
@@ -75,16 +75,16 @@
       </p>
       <p>
         La aplicación es propiedad exclusiva y está operada por <strong>Angel Miguel Friero Calvo</strong>,
-        residente en España. Esta política refleja decisiones técnicas reales del producto, no
-        buenas intenciones genéricas.
+        residente en España. Esta política describe las decisiones técnicas implementadas en el
+        producto.
       </p>
     </section>
 
     <!-- ─────────── 2. Filosofía de privacidad ─────────── -->
     <section class="section">
       <span class="section-header"><span class="num">2</span> Filosofía</span>
-      <h2 class="section-title">La privacidad es parte del producto, no un añadido legal</h2>
-      <p>Estas decisiones están en el código, no solo en este documento:</p>
+      <h2 class="section-title">La privacidad es parte del producto</h2>
+      <p>Estas decisiones están implementadas en el código:</p>
       <ul class="no-list">
         <li>NO usamos servicios de analítica. Sin Firebase Analytics, sin Mixpanel, sin Amplitude, sin Crashlytics, sin Google Analytics.</li>
         <li>NO tenemos publicidad dentro de la aplicación. Cero SDKs de Ads. Cero mediación.</li>
@@ -104,7 +104,8 @@
       <p>
         <strong>Los menores de edad NO necesitan crear una cuenta Google ni proporcionar email.</strong>
         Acceden mediante un código de un solo uso generado por uno de sus padres y vinculado a una
-        sesión anónima de Firebase Authentication. El binding requiere aprobación adulta en doble paso.
+        sesión anónima de Firebase Authentication. La vinculación requiere aprobación adulta en
+        doble paso.
       </p>
     </section>
 
@@ -200,7 +201,7 @@
       </ul>
       <p><strong>Y para qué NO los usamos:</strong></p>
       <ul class="no-list">
-        <li>Publicidad ni mediación de Ads.</li>
+        <li>Publicidad ni mediación publicitaria.</li>
         <li>Análisis de comportamiento ni perfilado.</li>
         <li>Envío de comunicaciones comerciales.</li>
         <li>Compartir con socios o brokers de datos.</li>
@@ -215,7 +216,7 @@
       <p>De acuerdo con el Reglamento (UE) 2016/679 (RGPD) y la LOPDGDD española:</p>
       <ul>
         <li><strong>Adultos:</strong> consentimiento al iniciar sesión con Google y aceptar esta
-            política (artículo 6.1.a RGPD) + ejecución de un contrato de uso del servicio
+            política (artículo 6.1.a RGPD) y ejecución de un contrato de uso del servicio
             (artículo 6.1.b RGPD).</li>
         <li><strong>Menores:</strong> consentimiento parental ejercido por el adulto que crea la
             familia y vincula al peque mediante código de un solo uso (artículo 8 RGPD). El adulto
@@ -294,7 +295,7 @@
         <li>Los menores acceden mediante un código generado por un adulto de la familia, no
             mediante registro propio.</li>
         <li>El acceso del peque requiere <strong>doble paso de aprobación</strong>: código + el
-            adulto debe aprobar el binding desde su panel.</li>
+            adulto debe aprobar la vinculación desde su panel.</li>
         <li>No solicitamos información personalmente identificable de los menores: no email, no
             nombre real, no fecha de nacimiento, no número de teléfono.</li>
         <li>Las fotos quedan exclusivamente en el dispositivo del adulto que las tomó.</li>
@@ -349,8 +350,8 @@
             cliente + servidor.</li>
         <li>El PIN del modo padre se almacena <strong>solo en el dispositivo</strong> (Hive
             cifrado), nunca en servidores remotos.</li>
-        <li>El binding del dispositivo del peque exige <strong>doble paso de aprobación</strong>
-            con códigos de un solo uso y TTL de 10 minutos. Un código filtrado no concede acceso
+        <li>La vinculación del dispositivo del peque exige <strong>doble paso de aprobación</strong>
+            con códigos de un solo uso y caducidad de 10 minutos. Un código filtrado no concede acceso
             por sí solo.</li>
       </ul>
     </section>
@@ -365,10 +366,10 @@
             autenticación. Google es responsable conjunto del tratamiento. Política de privacidad
             de Google:
             <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">policies.google.com/privacy</a>.</li>
-        <li><strong>Twemoji</strong> (assets gráficos bajo licencia CC-BY 4.0) — recursos visuales
-            bundleados, sin tratamiento de datos.</li>
-        <li><strong>Country Flags</strong> (paquete Flutter) — recursos visuales bundleados, sin
-            tratamiento de datos.</li>
+        <li><strong>Twemoji</strong> (recursos gráficos bajo licencia CC-BY 4.0) — recursos visuales
+            integrados en el binario, sin tratamiento de datos.</li>
+        <li><strong>Country Flags</strong> (paquete Flutter) — recursos visuales integrados en el
+            binario, sin tratamiento de datos.</li>
       </ul>
       <h3>NO usamos:</h3>
       <ul class="no-list">

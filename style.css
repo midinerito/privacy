@@ -7,6 +7,7 @@
  * Variables: paleta semántica (idéntica a `lib/theme/app_theme.dart`).
  * ============================================================ */
 :root {
+  color-scheme: light;
   --cream:       #fdf6e3;
   --cream-soft:  #fef9eb;
   --dark:        #1a1a1a;
@@ -32,17 +33,9 @@
   --radius-pill: 50px;
 }
 
-/* Auto-adapt dark mode (sutil — invertimos cream/dark, mantenemos colores semánticos). */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cream:      #1f1d18;
-    --cream-soft: #28251f;
-    --dark:       #fdf6e3;
-    --grey-200:   #3a3a3a;
-    --grey-600:   #c8c8c8;
-    --black-54:   rgba(255, 255, 255, 0.6);
-  }
-}
+/* Forzamos tema claro siempre (vía `color-scheme: light` en :root) — el
+ * design system está pensado para cream/dark; invertirlo en dark mode rompía
+ * contraste y legibilidad de las NeoCards. */
 
 /* ============================================================
  * Reset minimal + base.
@@ -350,9 +343,6 @@ main {
   text-decoration: underline;
   font-weight: 700;
   word-break: break-word;
-}
-@media (prefers-color-scheme: dark) {
-  .section a { color: var(--yellow); }
 }
 
 /* Lista de "NO usamos para" con cross marks rojas. */
