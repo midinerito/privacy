@@ -7,7 +7,7 @@
  * Variables: paleta semántica (idéntica a `lib/theme/app_theme.dart`).
  * ============================================================ */
 :root {
-  color-scheme: light;
+  color-scheme: only light;
   --cream:       #fdf6e3;
   --cream-soft:  #fef9eb;
   --dark:        #1a1a1a;
@@ -33,9 +33,14 @@
   --radius-pill: 50px;
 }
 
-/* Forzamos tema claro siempre (vía `color-scheme: light` en :root) — el
- * design system está pensado para cream/dark; invertirlo en dark mode rompía
- * contraste y legibilidad de las NeoCards. */
+/* Forzamos tema claro SIEMPRE. El keyword `only` (no solo `light`) bloquea
+ * el "auto-dark" agresivo de Chrome Android, Samsung Internet, MIUI Browser,
+ * etc. — sin él, esos navegadores reinvierten la paleta y rompen el contraste
+ * de las NeoCards aunque las variables CSS sean claras. */
+html, body {
+  color-scheme: only light;
+  background-color: #fdf6e3;
+}
 
 /* ============================================================
  * Reset minimal + base.
