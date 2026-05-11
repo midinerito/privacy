@@ -113,7 +113,7 @@ body {
   font-size: 16px;
 }
 
-.brand-emoji { font-size: 22px; line-height: 1; }
+.brand-emoji { width: 26px; height: 26px; display: block; flex-shrink: 0; }
 
 /* Pills de selector de idioma — patrón del design system §4.2. */
 .lang-switcher {
