@@ -52,7 +52,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* compensa header sticky al saltar a anchors */
+  scroll-padding-top: 100px; /* compensa header sticky al saltar a anchors */
 }
 
 body {
@@ -93,7 +93,7 @@ body {
   z-index: 10;
   background: var(--cream);
   border-bottom: var(--border);
-  padding: 12px 16px;
+  padding: 14px 16px;
 }
 
 .header-inner {
@@ -108,19 +108,24 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 14px;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
+  color: var(--dark);
+  text-decoration: none;
+  white-space: nowrap;
 }
+.brand:visited { color: var(--dark); }
 
 .brand-emoji {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   display: block;
   flex-shrink: 0;
   background: #FFD93D;
-  border: var(--border);
-  border-radius: 6px;
+  border: var(--border-thick);
+  border-radius: 13px;
+  box-shadow: var(--shadow);
 }
 
 /* Pills de selector de idioma — patrón del design system §4.2. */
